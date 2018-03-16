@@ -1,0 +1,584 @@
+*{  margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    outline: 0;
+}
+.cartblock{
+    display: none;
+}
+.clearfix {
+    clear:both;
+}
+input{
+    padding-left: 20px;
+}
+.valve{
+    display:none;
+}
+.yichu2{
+    display: none;
+}
+.removeright{
+    position: relative;
+    left: 305px;
+}
+li{
+    list-style:none;
+}
+h1{
+    margin: 0;
+    font-weight: 400;
+    font-size: 5.1rem;
+    letter-spacing: .1em;
+    line-height: 1.1;
+}
+.icon1-i{
+    padding-left:120px;
+}
+body{
+    background-color: aqua;
+    color: rgb(0, 49, 80);
+    font-family: "Microsoft Yahei", 微软雅黑, 黑体, Heiti, 华文黑体, "ST Heiti", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.42857;
+    font-size: 1.4rem;
+}
+.box{
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+    background-color:#fff;
+}
+/* 购物车页面头部 */
+.mycarhead{
+    padding: 36px 0 32px 0;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    background-color: #fff;
+}
+.mycarheadbody>.headbodyleft>div{
+    line-height: 30px;
+    font-size: 1.1rem;
+    margin: 15px 0px 0px 0px;
+    color: #222;
+    letter-spacing: 0.2em;
+    box-sizing: border-box;
+}
+.mysc{
+    font-weight: 400;
+    font-size: 3em;
+    letter-spacing: .1em;
+    line-height: 1.1;
+}  
+.mysc1{
+    margin-top: 5px;
+    letter-spacing:.2em;
+    color:black;
+}
+.headbodyright{
+    max-width: 556px;
+    width:556px;
+    box-sizing: border-box;
+} 
+.continueshop{
+    display: inline-block;
+    /* width: 45%; */
+    height: 77px;
+    line-height: 77px;
+    margin-right: 5%;
+    border: 1px solid #c7ccd0;
+}
+.continueshop:hover{
+    color: #fff;
+    border:1px solid #003150;
+    background-color:#003150;
+}
+.headpay {
+    display: inline-block;
+    /* width: 45%; */
+    line-height: 77px;
+    height: 77px;
+    color: #fff;
+    border:1px solid #003150;
+    background-color:#003150;
+}
+.headpay:hover{
+    border:1px solid #003150;
+    background-color:#fff;
+    color: #003150;
+}
+/* 购物车*/
+.shopcarbodyer{
+    max-width: 1600px;
+    margin: auto;
+    width: 100%;
+    overflow: hidden;
+}
+.shopcarbodyer-lg{
+    max-width: 1350px;
+    min-width: 767px;
+    margin: 0 auto;
+    padding-top: 40px;
+    background-color:#EFF1F3;
+}
+.shopcarbodyer-lg:after{
+    display: block;
+    content: "";
+    clear:both;
+}
+.youhavecar{
+   font-size: 3.2rem;
+}
+.recommend-span{
+    color: #747474;
+    font-size: 1.5rem;
+    margin: 45px 0 20px 0 ;
+    font-weight:400;
+}
+/* 购物详情模块 */
+.shopcarbodyer-lmode{
+    padding-left: 50px;
+    padding-right: 30px;
+    border-right: 1px solid #B7BFC6;
+}
+/* 购物车推荐显示列表 */
+.recommend-ul{
+    height: 290px;
+    display: flex;
+    margin-left: -20px;
+    background-color:#fff;
+}
+.recommend-ul img{
+    max-width:90%; 
+    min-width: 130px;
+}
+.recommend-ul li{
+    overflow: hidden;
+}
+.recommend-ul>li:first-child{
+    width: 40%; 
+}
+.recommend-ul>li:last-child{
+    width: 60%; 
+    padding-top: 50px;
+}
+.recommend-ul>li:last-child>p{
+    margin: 0;
+    font-weight: 600;
+    color:#84888b;
+}
+.recommend-ul>li:last-child>b{
+    display: block;
+    margin-top: 20px;
+    letter-spacing:.2em;
+    font-size: 1.8rem;
+}
+.putincar{
+    margin-top:20px; 
+    width: 75%;
+    height: 60px;
+    background: #003150;
+    color:#fff;
+    font-weight:400;
+    letter-spacing: .08em;
+    line-height: 60px;
+    text-align: center;
+}
+.putincar:hover{
+    background: #fff;
+    color:#003150;
+    border:1px solid #003150;
+}
+/* 订当详情模块  */
+.shopcarbodyer-rmode{
+    padding-bottom: 80px;
+    padding-left: 25px;
+    padding-right: 30px;
+
+}
+.order{
+    font-size: 2.6rem;
+    line-height: 28px;
+    font-weight: 600;
+    color: #84888b;
+    letter-spacing: 2px;
+}
+.orderTable{
+    margin-top: 55px;
+    width: 100%;
+}
+.orderTable tr:nth-child(2n-1){
+    background-color:#EFF1F3;
+}
+.orderTable tr td:first-child{
+    height:32px;
+    font-weight:600;
+    line-height: 32px;
+    font-size: 1.2em;
+    padding-left: 20px;
+}
+.orderTable tr td:last-child{
+    text-align: right;
+    font-weight:600;
+    padding-right: 20px;
+}
+/* 保险模块 */
+.cart-reinsurance{
+    margin-top: 44px;
+    margin-bottom: 50px;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    color: #84888b;
+    font-weight: normal;
+}
+.cart-reinsurance h3{
+    margin: 0;
+    font-size: 1.7rem;
+    margin: 45px 0 10px 0;
+}
+.cart-reinsurance p{
+    margin: 0;
+    line-height: 2.2em;
+    font-size: 1.3rem;
+}
+.cart-reinsurance p:last-child{
+    line-height: 4.2em;
+}
+.cart-reinsurance p:last-child img{
+    margin-right: 40px;
+}
+/* 购物商品数量显示 */
+.numbwatch{
+    margin: 0;
+    padding: 0;
+    font-weight:400;
+    font-size: 2.3em;
+}
+.numbwatch-p{
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+    color: #84888b;
+    font-size: 2rem;
+    margin-bottom:30px;
+}
+/* 购物车列表样式 */
+.shopcartBackcolor{
+    margin-top: 80px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.shopcartBackcolor>div>h4{
+    margin-bottom:50px;
+}
+.shopcartAfter:after{
+    content:'';
+    display: block;
+    height: 34px;
+    width: 100%;
+}
+.bing-shopcartcentent{
+    background-color:#fff;
+    border-bottom:3px solid #f7f7f7;
+    display: flex;
+    padding-left: 10%;
+    margin: 0;
+    display: flex;
+    align-items:center;
+}
+.bing-shopcartcentent>div:first-child{
+    width: 35%;
+}
+.bing-shopcartcentent>div:last-child{
+    width: 65%;
+    /* padding-top: 10%; */
+    padding-right: 20px;
+    height: 100%;
+}
+.bing-shopcartcentent>div:last-child>div{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+}
+.bing-shopcartcentent>div:last-child>div>div{
+    margin: 10px;
+    color: #84888b;
+}
+.bing-shopcartcentent img{
+    width: 80%;
+}
+.bing-listcontent{
+    padding-top: 80px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    border-bottom: 1px solid #e6eaed;
+    color:#84888b;
+}
+.shopcarshow-content-left-select{
+    border:1px solid #84888b;
+    outline: none;
+    border-radius:0;
+    width: 97px;
+    height: 50px;
+/* 将默认的select框清除/ */
+    /* appearance:none;/ */
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    padding-left: 5%;
+/* 在最右侧显示小箭头 */
+    background:url(../arrow-select.png)no-repeat 80% center;
+}
+/* 移除样式 */
+/* 最里面的自适应布局开始 */
+.bing-content{
+    height: 200px;
+    display: flex;
+    flex-direction:column;
+}
+.content-select span{
+    display: inline-block;
+    padding-bottom: 15px;
+}
+.content-select{
+    margin-top:40%;
+}
+.content-numb{
+    display: flex;
+}
+.price{
+    margin-right: 20px;
+    height: 200px;
+    display: flex;
+    padding-top:90px;
+    flex-direction:column;
+}
+.price-numb{
+    color:#003150;
+    font-weight: 600;
+}
+.count{
+    height: 200px;
+    margin-right: 20px;
+    display: flex;
+    padding-top:90px;
+    flex-direction:column;
+}
+.count-numb{
+    font-weight: 600;
+    color:#003150;
+}
+/* 最里面的自适应布局结束 */
+.xdelete{
+    float: right;
+    margin:20px 0 0 0 ;
+    font-size:1.1em;
+    color: #84888b;
+    padding: 5px;
+    border-radius: 4px;
+}
+.xdelete:hover{
+    color: #003150;
+}
+/* 礼物寄回样式 */
+.diamonds{
+    padding: 0;
+    margin: 0;
+    display: block;
+    width: 31px;
+    height: 31px;
+    float: left;
+    border: 1px solid #84888b;
+}
+.diamonds-i{
+    margin: 0;
+    padding: 0;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color:blue;
+    margin: 5px;
+}
+.mybtn{
+    display: none;
+}
+.diamonds-r{
+    display: block;
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 30px;
+}
+/* 礼物寄语表格 */
+.table-gift-header{
+    margin-bottom:20px;
+}
+.table-gift-header:after{
+    content:"";
+    display: table;
+    clear: both;
+}
+.gift-input{
+    width:100%;
+    height: 50px;
+}
+.gift-input-text{
+    resize: vertical;
+    width: 100%;
+    height: 170px;
+    outline: 0;
+}
+/* 礼物寄语表格更新预览部分 */
+.preview{
+    margin-top: 20px;
+    width: 30%;
+    height: 55px;
+    color: rgb(0,49,80);
+    border: 1px solid rgb(199,204,208);
+    text-align: center;
+    line-height: 55px;
+}
+.update{
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 30%;
+    height: 55px;
+    color: #fff;
+    border: 1px solid #003150;
+    background-color: #003150;
+    text-align: center;
+    line-height: 55px;
+}
+.preview:hover{
+    color: #fff;
+    border: 1px solid #003150;
+    background-color: #003150;
+}
+.update:hover{
+    color: #003150;
+    border: 1px solid #003150;
+    background-color: #fff;
+}
+.table-gift-foot-p{
+    margin-top: 30px;
+    color:#84888b;
+}
+.table-gift-foot-p a{
+    color: #84888b;
+    text-decoration: none;
+}
+.table-gift-foot-p a:hover{
+    color: #003150;
+}
+/* 结算支付 */
+.box-settle{
+    color: #84888b;
+    padding-bottom:50px;
+}
+.rebatePut{
+    margin-top: 10px;
+    display: block;
+    width: 178px;
+    height: 50px;
+    float: left;
+}
+.settle{
+    margin-top: 10px;
+    margin-left: 10px;
+    width:80px;
+    height: 50px; 
+    background: #003150;
+    border: 1px solid #003150;
+    color: #fff;
+    float: left;
+    line-height: 50px;
+    text-align: center;
+}
+.settle-pay{
+    float: right;
+    width: 266px;
+    height: 60px;
+    background: #003150;
+    border: 1px solid #003150;
+    color: #fff;
+    line-height: 60px;
+    text-align: left;
+    padding-left: 40px;
+}
+.table-gift-header{
+    margin-top: 50px;
+}
+/* checkout 样式*/
+.bianbai{
+    background-color:#fff;
+}
+.leftpart{
+    background-color:#EFF1F3;
+    
+}
+.rightpart{
+    padding-top: 50px;
+    background-color:#f7f7f7;
+}
+.kuang-box{
+    display: flex;
+    justify-content: space-between;
+}
+.kuang{
+    display: flex;
+    border: 1px solid #b7bfc6;
+    width:30%;
+    padding:0 2% 0 2%;
+    align-items:center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.kuang img{
+   margin-left: 15%;
+   width:140px;
+}
+/* 头部 */
+.anquanbaoz{
+    display: flex;
+    flex-direction:column;
+    align-items:flex-end;
+}
+.anquanbaoz img{
+    width:100px;
+    display: block;
+}
+.fapiao{
+    margin-top: 50px;
+}
+/* 配送地址
+ */
+ .divstyle>div{
+    margin: 0;
+    margin-bottom:20px;
+ }
+ .footer-pay{
+     height:72px;
+     display: flex;
+     justify-content:flex-end;
+     align-items:center;
+     padding: 0;
+     width:100%;
+     background-color: #e6eaed;
+ }
+ .footer-pay-end{
+    /* width: 266px; */
+    height: 72px;
+    background: #003150;
+    border: 1px solid #003150;
+    color: #fff;
+    line-height: 72px;
+    text-align: left;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    justify-content:space-between;
+}

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>checkout</title>
+	<mata name=“viewport” content=“width=device-width,initial-scale=1”></mata>
+	<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+	<link rel="stylesheet" media="(max-width:1600px)""and (min-width:1200px)" href="shopcarcss/shopcarlg.css">
+	<link rel="stylesheet" media="(max-width:1199px) and (min-width:768px)" href="shopcarcss/shopcarmd.css">
+	<link rel="stylesheet" media="(max-width:767px)" href="shopcarcss/shopcarsm.css">
+</head>
+<body>
+	<section class="box container-fluid">
+		<!-- 购物车页面头部 -->
+		<div class="mycarhead clearfix row ">
+				<div class=" col-xs-12 col-sm-8 col-md-6 ">
+					<h1 class="mysc">结算支付</h1>
+				</div>
+				<div class="hidden-xs col-sm-4 col-md-6 anquanbaoz">
+					<div>
+						<img src="logo.svg" alt="">
+					</div>
+					<div class="mysc1">安全购物保障</div>
+				</div>
+				
+		</div>
+		<div class="container-fluid">
+			<!-- 你的购物车 -->
+			<div class="shopcarbodyer clearfix ">
+				<div class="shopcarbodyer-lg row bianbai">
+						<!-- 配送地址信息 -->
+						<div class="col-xs-12 col-sm-7 col-md-7 leftpart" >
+								<div class="row" style="margin:0">
+									<div class="table-gift-header col-xs-12 col-sm-12 col-md-12 ">
+										<h2>配送地址信息</h2>
+									</div>
+									<div class="col-xs-12 col-sm-12 col-md-12">				
+											<div class="row divstyle">
+												<div class="col-xs-6 col-sm-6 col-md-6">
+													<label for="gift1" >
+														<span >姓名</span>
+													</label>
+													<div class="giftcontrol">
+														<input type="text" id="gift1" class="gift-input">
+													</div>
+												</div>
+												<div class="col-xs-6 col-sm-6 col-md-6" >
+													<label for="gift2" >
+														<span>电话</span>
+													</label>
+													<div class="giftcontrol">
+														<input type="text" id="gift2" class="gift-input">
+													</div>
+												</div>
+												<div class="col-xs-6 col-sm-6 col-md-6">
+													<label for="province" >
+														<span >*省</span>
+													</label>
+													<div class="giftcontrol">
+														<div >
+															<select  class="shopcarshow-content-left-select" style="width:100%;" id="province">
+																<option value="1" 1="" selected="">浙江省</option>
+																<option value="2" 2="">北京</option>
+															</select>
+														</div>
+													</div>
+												</div>
+												<div class="col-xs-6 col-sm-6 col-md-6" >
+													<label for="city" >
+														<span>*市</span>
+													</label>
+													<div class="giftcontrol">
+															<div >
+																<select  class="shopcarshow-content-left-select" style="width:100%;" id="city">
+																	<option value="1" 1="" selected="">杭州市</option>
+																	<option value="2" 2="">北京</option>
+																</select>
+															</div>
+													</div>	
+												</div>
+												<div class="col-xs-6 col-sm-6 col-md-6">
+														<label for="classify" >
+															<span >*区</span>
+														</label>
+														<div class="giftcontrol">
+															<select  class="shopcarshow-content-left-select" style="width:100%;" id=”classify“>
+																<option value="1" 1="" selected="">西湖区</option>
+																<option value="2" 2="">北京</option>
+															</select>
+														</div>
+													</div>
+													<div class="col-xs-6 col-sm-6 col-md-6" >
+														<label for="address" >
+															<span>*地址</span>
+														</label>
+														<div class="giftcontrol">
+															<input type="text" id="address" class="gift-input">
+														</div>
+														
+												</div>
+												<div class="col-xs-6 col-sm-6 col-md-6">
+														<label for="postal" >
+															<span >邮政编码</span>
+														</label>
+														<div class="giftcontrol">
+															<input type="text" id="postal" class="gift-input">
+														</div>
+												</div>
+												<div class="col-xs-6 col-sm-6 col-md-6" >
+															
+												</div>
+												<div class="col-xs-12 col-sm-12 col-md-12">
+													<h3>支付方式</h3>
+													<div class="kuang-box">
+														<div class="kuang">
+															<p class="diamonds">
+																	<i class="diamonds-i">
+																	</i>
+															</p>
+															<img src="alipay_method.png" alt="" class="img-responsive">
+														</div>
+														<div class="kuang">
+															<p class="diamonds">
+																	<i class="diamonds-i">
+																	</i>
+															</p>
+															<img src="chinapay_method.png" alt="" class="img-responsive">
+														</div>
+														<div class="kuang">
+															<p class="diamonds">
+																	<i class="diamonds-i">
+																	</i>
+															</p>
+															<img src="weixin_method.png" alt="" class="img-responsive">
+														</div>
+													</div>
+
+												</div>
+												<div class="col-xs-12 col-sm-12 col-md-12 fapiao">
+													<h4>发票信息</h4>
+													<p>浪琴使用电子发票。您可以参阅使用说明，在包裹内获得您的电子发票提取码，然后获取您的电子发票。</p>
+												</div>
+												<div class="table-gift-header col-xs-12 col-sm-12 col-md-12 ">
+														<span class="diamonds">
+															<i class="diamonds-i">
+															</i>
+														</span>
+														<span class="diamonds-r">我已阅读并同意<a href="#">《浪琴账户注册协议》,</a> <a href="#">《销售条件》,</a><a href="#">《发货和退货协议》</a></span>
+												</div>
+												<div class="col-xs-12 col-sm-12 col-md-12 footer-pay" >
+													<!-- <div class="row"> -->
+														<h3 class="col-xs-6 col-sm-6 col-md-4" >总计 ¥ 89.800.00</h3>	
+														<div class="footer-pay-end col-xs-6 col-sm-6 col-md-4">
+																继续支付 <span>---></span>
+														</div>
+													<!-- </div> -->
+												</div>
+											</div>
+									</div>	
+								</div>
+						</div>
+						<!-- 订单详情 -->
+						<div class="col-xs-12 col-sm-5 col-md-5 rightpart" >
+							<div >
+									<div class="order">订单详情</div>
+									<table class="orderTable" style="overflow:hidden">
+										<tr>
+											<td>小计</td>
+											<td>¥ 0.00</td>
+										</tr>
+										<tr>
+											<td>配送</td>
+											<td>免费</td>
+										</tr>
+										<tr>
+											<td>总计</td>
+											<td>¥ 0.00</td>
+										</tr>
+									</table>
+									<div class="row shopcartBackcolor">
+											<div><h4>订单详情</h4></div>
+											<!-- 购物车列表样式 -->
+											<div class="bing-shopcartcentent">
+												<!-- 购物车并排内容 -->
+											
+												<div >
+													<img src="L8.110.4.71.6sm.png" alt="">
+												</div>
+												<div >
+														<div>
+																<div >
+																	<p>浪琴表名匠系列</p>
+																	<span>L2.128.4.78.3</span>
+																</div>
+																<div >
+																	<span>数量:</span>
+																	<span style="color: #003150;">2</span>
+																	<p style="color: #003150;">¥13,800.00</p>
+																</div>
+																<div>
+																	<p >总计: <span style="color: #003150;">¥27.600.00</span></p>
+																</div>
+														</div>
+														
+												</div>
+												
+												
+												
+											</div>			
+									</div>
+							</div>
+						</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+</html>

@@ -1,0 +1,76 @@
+
+.bing-listcontent{
+    padding-top: 5%;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    border-bottom:none;
+    color:#84888b;
+}
+/* 最里面的自适应布局开始 */
+.sijin{
+    display: none;
+}
+.bing-content{
+    height: auto;
+}
+.bing-content p{
+    margin-bottom:1%;
+}
+.content-select span{
+    margin: 0;
+    padding-bottom: 1%;
+}
+.content-select{
+    margin-top:3%;
+}
+.shopcarshow-content-left-select{
+    width: 67px;
+    height: 40px;
+}
+.content-numb{
+    display: flex;
+}
+.price{
+    margin-right: 10%;
+    height: 0;
+    padding-top:2%;
+}
+.price-numb{
+    color:#003150;
+    font-weight: 600;
+}
+.count{
+    margin-right: 10%;
+    height: 0;
+    padding-top:2%;
+}
+.count-numb{
+    font-weight: 600;
+    color:#003150;
+}
+.yichu2{
+    display: block;
+    overflow: hidden;
+    height: 50px;
+    line-height: 50px;
+    padding-right: 20px;
+    border-top: 1px solid #e6eaed;
+}
+.yichu2 p{
+    float: right;
+    color: #84888b;
+}
+/* 最里面的自适应布局结束 */
+.sijin2{
+    margin-top: 15%;
+    margin-bottom: 20px;
+}
+.rebatePut{
+    margin-top: 10px;
+    display: block;
+    width: 70%;
+    height: 50px;
+    float: left;
+    margin-bottom: 20px;
+}
